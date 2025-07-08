@@ -19,6 +19,15 @@ With Webviews, you can create custom webview components in Strapi that will be r
         // ...
     }
     ```
-3. Local: `npm run build  && npm run develop` 
+3. Register plugin inside the `config/plugins.ts` file:
+   ```
+   export default {
+        'webviews': {
+            enabled: true,
+            resolve: './src/plugins/webviews'
+        },
+    };
+    ```
+4. Local: `npm run build  && npm run develop` 
     
     (Add ` -- --watch-admin` at the end if you would like to make changes without constantly refreshing)
