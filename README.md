@@ -14,9 +14,9 @@ With Webviews, you can create custom webview components in Strapi that will be r
 2. Add the prebuild script in your package.json of your Strapi 4 project.
     ```json
     "scripts": {
-        /* ... */
+        // ...
         "prebuild": "cd src/plugins/webviews && npm run build",
-        /* ... */
+        // ...
     }
     ```
 3. Local: `npm run build  && npm run develop` 
